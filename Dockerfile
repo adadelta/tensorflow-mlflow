@@ -94,7 +94,7 @@ RUN ${PIP} install mlflow[extras]
 # ########## #
 
 ARG TF_PACKAGE=tensorflow-gpu
-ARG TF_PACKAGE_VERSION=2.0.0rc0
+ARG TF_PACKAGE_VERSION=2.0.0
 RUN ${PIP} install ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}}
 
 COPY bashrc /etc/bash.bashrc
